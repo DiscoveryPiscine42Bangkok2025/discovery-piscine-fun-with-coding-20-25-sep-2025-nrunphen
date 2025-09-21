@@ -1,1 +1,2 @@
-find . -maxdepth 1 -type f -or -type d | wc -l
+#!/bin/bash
+ls -1 | wc -l
