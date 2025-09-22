@@ -1,12 +1,12 @@
-function getRandomColor() {
-    let letters = "0123456789ABCDEF";
-    let color = "#";
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
+const button = document.getElementById('colorChangeBtn');
+const body = document.body;
+
+function getRandomHexColor() {
+    const randomColor = Math.floor(Math.random() * 16777215);
+    const hexColor = '#' + randomColor.toString(16).padStart(6, '0');
+    return hexColor;
 }
 
-document.getElementById("btn").addEventListener("click", function() {
-    document.body.style.backgroundColor = getRandomColor();
+button.addEventListener('click', () => {
+    body.style.backgroundColor = getRandomHexColor();
 });
