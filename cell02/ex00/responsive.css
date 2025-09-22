@@ -1,18 +1,25 @@
-html, body {
-  margin: 0;
-  height: 100%;
-}
 table {
-  border-collapse: collapse;
-  width: 100%;     /* กินเต็มจอแนวนอน */
-  height: 100vh;   /* กินเต็มจอแนวตั้ง */
+    width: 100%;
+    border-collapse: collapse;
 }
+
 td {
-  border: 1px solid black;
-  text-align: center;
+    width: 50%;
+    height: 100px;
+    border: 1px solid black;
 }
-.cell1 { background-color: #c9c98b; }
-.cell2 { background-color: #f6c1ad; }
-.cell3 { background-color: #add8e6; }
-.cell4 { background-color: #ffeb99; }
-.cell5 { background-color: #d9b3ff; }
+
+.cell1 {
+    background-color: lightgreen;
+}
+
+.cell2 {
+    background-color: lightcoral;
+}
+
+@media (max-width: 600px) {
+    td {
+        display: block;
+        width: 100%;
+    }
+}
