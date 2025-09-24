@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 2 คน</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://via.placeholder.com/200" rel="stylesheet">
+</head>
+<body>
+
+<!-- หน้าแรก เลือกคน -->
+<section id="home" class="home">
+    <h1>Portfolio</h1>
+    <div class="person-select">
+        <div class="person-card" onclick="showPortfolio('person1')">
+            <img src="https://media.discordapp.net/attachments/1419526042451968020/1420402741423112243/IMG_9798.jpg?ex=68d544a3&is=68d3f323&hm=7159b198300267117629b4b41cee40beba174522a6c77dedc37555a910a595a0&=&format=webp&width=794&height=807" width="30%" height="50%">
+            <p>Nattakan Bunyarun</p>
+        </div>
+        <div class="person-card" onclick="showPortfolio('person2')">
+            <img src="https://media.discordapp.net/attachments/1419526042451968020/1420404899048460428/IMG_1497.jpg?ex=68d546a5&is=68d3f525&hm=9fcd0b057b1db4cb5db0f0eefec45405abbb56daf9efcd904040593d9a93319b&=&format=webp&width=890&height=667" width="30%" height="50%">
+            <p>Natacha Runphen</p>
+        </div>
+    </div>
+</section>
+
+<!-- พอร์ตของคนที่ 1 -->
+<section id="person1" class="portfolio hidden">
+    <header class="navbar">
+        <nav class="container">
+           <a href="#person1-about">About Me</a>
+            <a href="#person1-showcase">Showcase</a>
+            <a href="#person1-contact">Contact</a>
+            <a href="#" onclick="goHome()">Back Home</a>
+        </nav>
+    </header>
+
+    <section id="person1-about" class="about-me">
+        <div class="container">
+            <h1>Nattakan Bunyarun</h1>
+            <p>Freshman student, Faculty of Business Administration, Business Economics and Management Program, King Mongkut’s Institute of Technology Ladkrabang.
+            </p>
+            <p>high school level from Mattayom Watbuengthonglang School.</p>
+            <img src="https://media.discordapp.net/attachments/1419526042451968020/1420402741423112243/IMG_9798.jpg?ex=68d544a3&is=68d3f323&hm=7159b198300267117629b4b41cee40beba174522a6c77dedc37555a910a595a0&=&format=webp&width=653&height=664" width="40%" height="60%" alt="Profile 1">
+        </div>
+    </section>
+
+    <section id="person1-showcase" class="showcase">
+    <div class="container">
+        <h2>My Project</h2>
+        <div class="projects">
+            <div class="project-card fade-in">
+                <img src="https://media.discordapp.net/attachments/1419526042451968020/1420408732743106621/1.jpg?ex=68d54a37&is=68d3f8b7&hm=446fd3c10f86b8afdf41a82450391299b078cb6592c3c51ec65acd848b5e9e31&=&format=webp&width=894&height=599" width="80%" height="100%" alt="Project 1">
+                <h4>English Camp At School</h4>
+                <p>Exchange of knowledge in language and culture</p>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="https://media.discordapp.net/attachments/1419526042451968020/1420408732743106621/1.jpg?ex=68d54a37&is=68d3f8b7&hm=446fd3c10f86b8afdf41a82450391299b078cb6592c3c51ec65acd848b5e9e31&=&format=webp&width=894&height=599" width="80%" height="100%" alt="Project 2">
+                <h3>English Camp At School</h3>
+                <p>Exchange of knowledge in language and culture</p>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="https://media.discordapp.net/attachments/1419526042451968020/1420408732743106621/1.jpg?ex=68d54a37&is=68d3f8b7&hm=446fd3c10f86b8afdf41a82450391299b078cb6592c3c51ec65acd848b5e9e31&=&format=webp&width=894&height=599" width="80%" height="100%" alt="Project 3">
+                <h3>English Camp At School</h3>
+                <p>Exchange of knowledge in language and culture</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer id="person1-contact">
+        <p>Contact Gmail:68100368@kmitl.ac.th</p>
+    </footer>
+</section>
+
+<!-- พอร์ตของคนที่ 2 -->
+<section id="person2" class="portfolio hidden">
+    <header class="navbar">
+        <nav class="container">
+            <a href="#person2-about">About Me</a>
+            <a href="#person2-showcase">Showcase</a>
+            <a href="#person2-contact">Contact</a>
+            <a href="#" onclick="goHome()">Back Home</a>
+        </nav>
+    </header>
+
+    <section id="person2-about" class="about-me">
+        <div class="container">
+            <h1>Natacha Runphen</h1>
+            <p>Freshman student, Faculty of Business Administration, Business Economics and Management Program, King Mongkut’s Institute of Technology Ladkrabang.</p>
+            <p>high school level from Satri si suriyothai School.</p>
+            <img src="https://media.discordapp.net/attachments/1419526042451968020/1420404899048460428/IMG_1497.jpg?ex=68d546a5&is=68d3f525&hm=9fcd0b057b1db4cb5db0f0eefec45405abbb56daf9efcd904040593d9a93319b&=&format=webp&width=753&height=566" width="40%" height="60%" alt="Profile 1">
+        </div>
+    </section>
+
+    <section id="person2-showcase" class="showcase">
+    <div class="container">
+        <h2>My Project</h2>
+        <div class="projects">
+            <div class="project-card fade-in">
+                <img src="https://media.discordapp.net/attachments/1419526042451968020/1420404899379806379/IMG_1498.jpg?ex=68d546a5&is=68d3f525&hm=9a1d994815723a43e4b45730085581a5f2c9bb9921596a0c223c4b55cd61557a&=&format=webp&width=1185&height=667" width="80%" height="100%" alt="Project 1">
+                <h3>"Participated in the Life Skills, Volunteer Spirit, Moral and Environmental Development Camp at Toei Ngam Beach, Marine Corps Camp, Sattahip Naval Base."</h3>
+                <p>Participated in the Life Skills, Volunteer Spirit, Moral and Environmental Development Camp at Toei Ngam Beach, Marine Corps Camp, Sattahip Naval Base. The project aimed to develop participants’ life skills, foster volunteerism and moral values, and promote environmental conservation. Activities included teamwork exercises, volunteer activities, environmental clean-up and preservation tasks, as well as workshops on ethical decision-making. Through these activities, participants gained practical skills, strengthened their social responsibility, and developed a deeper understanding of the importance of environmental conservation.</p>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="https://media.discordapp.net/attachments/1419526042451968020/1420404899379806379/IMG_1498.jpg?ex=68d546a5&is=68d3f525&hm=9a1d994815723a43e4b45730085581a5f2c9bb9921596a0c223c4b55cd61557a&=&format=webp&width=1185&height=667" width="80%" height="100%" alt="Project 2">
+                <h3>"Participated in the Life Skills, Volunteer Spirit, Moral and Environmental Development Camp at Toei Ngam Beach, Marine Corps Camp, Sattahip Naval Base."</h3>
+                <p>Participated in the Life Skills, Volunteer Spirit, Moral and Environmental Development Camp at Toei Ngam Beach, Marine Corps Camp, Sattahip Naval Base. The project aimed to develop participants’ life skills, foster volunteerism and moral values, and promote environmental conservation. Activities included teamwork exercises, volunteer activities, environmental clean-up and preservation tasks, as well as workshops on ethical decision-making. Through these activities, participants gained practical skills, strengthened their social responsibility, and developed a deeper understanding of the importance of environmental conservation.</p>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="https://media.discordapp.net/attachments/1419526042451968020/1420404899379806379/IMG_1498.jpg?ex=68d546a5&is=68d3f525&hm=9a1d994815723a43e4b45730085581a5f2c9bb9921596a0c223c4b55cd61557a&=&format=webp&width=1185&height=667" width="80%" height="100%" alt="Project 3">
+                <h3>"Participated in the Life Skills, Volunteer Spirit, Moral and Environmental Development Camp at Toei Ngam Beach, Marine Corps Camp, Sattahip Naval Base."</h3>
+                <p>Participated in the Life Skills, Volunteer Spirit, Moral and Environmental Development Camp at Toei Ngam Beach, Marine Corps Camp, Sattahip Naval Base. The project aimed to develop participants’ life skills, foster volunteerism and moral values, and promote environmental conservation. Activities included teamwork exercises, volunteer activities, environmental clean-up and preservation tasks, as well as workshops on ethical decision-making. Through these activities, participants gained practical skills, strengthened their social responsibility, and developed a deeper understanding of the importance of environmental conservation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer id="person2-contact">
+        <p>Contact Gmail:68100372@kmitl.ac.th</p>
+    </footer>
+</section>
+
+<script>
+function showPortfolio(personId) {
+    document.getElementById("home").classList.add("hidden");
+    document.getElementById(personId).classList.remove("hidden");
+}
+
+function goHome() {
+    document.querySelectorAll(".portfolio").forEach(p => p.classList.add("hidden"));
+    document.getElementById("home").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
